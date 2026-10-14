@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saurabh Patil | Engineering Student & Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Saurabh Patil - Engineering Student at R. C. Patel Institute of Technology, Shirpur. Skilled in software development, SQL database design, and web technologies.">
+  <meta name="author" content="Saurabh Patil">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Bespoke Dynamic Background Canvas & Ambient Lighting -->
+  <div class="bg-art-canvas" aria-hidden="true">
+    <div class="cursor-spotlight" id="cursorSpotlight"></div>
+    <div class="aurora-orb aurora-1"></div>
+    <div class="aurora-orb aurora-2"></div>
+    <div class="aurora-orb aurora-3"></div>
+    <div class="aurora-orb aurora-4"></div>
+    <div class="tech-grid-overlay"></div>
+    <div class="noise-texture"></div>
+    <div class="horizon-light-beam"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-badge">SP</span>
+        <span class="logo-text">Saurabh<span class="accent-dot">.</span>Patil</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="icon-btn theme-toggle" title="Toggle color theme" aria-label="Toggle dark or light theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-primary header-cta">Connect</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" class="icon-btn mobile-menu-btn" aria-label="Toggle Mobile Navigation" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        <li class="mobile-drawer-cta">
+          <a href="#contact" class="btn btn-primary w-full">Let's Connect</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-indicator"></span>
+            <span>Engineering Student · Open for Internships & Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Saurabh Patil</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="role-prefix">I am an</span>
+            <span id="roleText" class="role-highlight">Engineering Student</span>
+          </div>
+
+          <p class="hero-description">
+            Driven and solution-focused <strong>Engineering Student</strong> at <strong>R. C. Patel Institute of Technology, Shirpur</strong>. 
+            Passionate about core programming fundamentals, robust SQL database architecture, 
+            and crafting clean, responsive, user-centered web applications.
+          </p>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Shirpur, Maharashtra, India</span>
+            </div>
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:sp1822007@gmail.com">sp1822007@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+            </a>
+            <button id="resumeBtn" class="btn btn-ghost" title="Preview Summary / Resume">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>View Resume</span>
+            </button>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <span class="social-label">Find me on:</span>
+            <div class="social-links-row">
+              <a href="https://github.com/patilsaurabh007" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/saurabh-patil" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="tel:+918766884964" class="social-pill" aria-label="Call Mobile">
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>+91 8766884964</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Interactive Terminal Card -->
+        <div class="hero-visual">
+          <div class="code-terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">developer_profile.json</div>
+              <div class="terminal-tag">active</div>
+            </div>
+            <div class="terminal-body">
+              <pre><code class="language-json"><span class="token-punct">{</span>
+  <span class="token-key">"name"</span>: <span class="token-string">"Saurabh Patil"</span>,
+  <span class="token-key">"role"</span>: <span class="token-string">"Engineering Student & Developer"</span>,
+  <span class="token-key">"college"</span>: <span class="token-string">"R. C. Patel Inst. of Tech, Shirpur"</span>,
+  <span class="token-key">"location"</span>: <span class="token-string">"Shirpur, MH, India"</span>,
+  <span class="token-key">"core_skills"</span>: <span class="token-punct">[</span>
+    <span class="token-string">"Logic & Algorithms"</span>,
+    <span class="token-string">"SQL & RDBMS"</span>,
+    <span class="token-string">"HTML5 / CSS3"</span>,
+    <span class="token-string">"SDLC & Git"</span>
+  <span class="token-punct">]</span>,
+  <span class="token-key">"featured_project"</span>: <span class="token-string">"CampusPay"</span>,
+  <span class="token-key">"status"</span>: <span class="token-string">"Seeking Internships & Opportunities 🚀"</span>
+<span class="token-punct">}</span></code></pre>
+            </div>
+            <div class="terminal-footer">
+              <div class="status-indicator">
+                <span class="status-circle"></span>
+                <span>Enrolled at RCPIT Shirpur · Open for Collaboration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="container hero-metrics">
+        <div class="metric-card">
+          <div class="metric-icon">🎯</div>
+          <div class="metric-data">
+            <span class="metric-value">Full-Stack Foundation</span>
+            <span class="metric-label">Frontend + Relational DBs</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon">💳</div>
+          <div class="metric-data">
+            <span class="metric-value">CampusPay</span>
+            <span class="metric-label">Campus FinTech Project</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon">🎓</div>
+          <div class="metric-data">
+            <span class="metric-value">RCPIT Shirpur</span>
+            <span class="metric-label">Engineering Student</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon">📍</div>
+          <div class="metric-data">
+            <span class="metric-value">Shirpur, MH</span>
+            <span class="metric-label">Open to Internships</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Curiosity & Problem-Solving</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Bridging fundamental computing theory with dependable real-world software applications.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-about">
+            <div class="about-header-flex">
+              <div class="avatar-badge">
+                <span>SP</span>
+              </div>
+              <div>
+                <h3 class="about-name">Saurabh Patil</h3>
+                <p class="about-sub">Engineering Student · RCPIT Shirpur</p>
+              </div>
+            </div>
+            
+            <p class="about-text">
+              I am a driven and solution-focused <strong>Engineering Student</strong> at <strong>R. C. Patel Institute of Technology, Shirpur</strong> with a strong enthusiasm for software engineering. 
+              With a solid grounding in core programming concepts, data structures, and database engineering, 
+              I take pride in transforming functional requirements into elegant, efficient, and maintainable software.
+            </p>
+            <p class="about-text">
+              Through hands-on development like <strong>CampusPay</strong> (a campus-focused transaction and record management platform), 
+              I have engineered responsive user interfaces and designed structured relational SQL databases. 
+              I continuously apply structured Software Development Lifecycle (SDLC) best practices to write clean code 
+              and build practical, user-centered digital solutions.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="highlight-item">
+                <div class="highlight-check">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Logical Problem Solver</strong>
+                  <span>Strong foundation in data structures & algorithmic thinking</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-check">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Database Architecture</strong>
+                  <span>Proficient in SQL normalization, integrity, and querying</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-check">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Modern Web Interfaces</strong>
+                  <span>Responsive, accessible frontend implementation using HTML5 & CSS3</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-check">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Collaborative & Agile</strong>
+                  <span>Version control with Git/GitHub, adhering to disciplined SDLC workflows</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-sidebar">
+            <div class="info-card">
+              <h4 class="card-mini-title">Quick Facts</h4>
+              <ul class="quick-facts-list">
+                <li>
+                  <span class="fact-label">Location</span>
+                  <span class="fact-value">Shirpur, Maharashtra, India</span>
+                </li>
+                <li>
+                  <span class="fact-label">College</span>
+                  <span class="fact-value">R. C. Patel Inst. of Tech, Shirpur</span>
+                </li>
+                <li>
+                  <span class="fact-label">Specialization</span>
+                  <span class="fact-value">Software & DB Engineering</span>
+                </li>
+                <li>
+                  <span class="fact-label">Language / Stack</span>
+                  <span class="fact-value">HTML5, CSS3, SQL, Core Logic</span>
+                </li>
+                <li>
+                  <span class="fact-label">Status</span>
+                  <span class="fact-value status-badge-pill">Open to Internships</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="philosophy-card">
+              <div class="quote-icon">“</div>
+              <p class="philosophy-text">
+                "Writing clean code and designing dependable databases isn't just about making things work—it's about building solutions that last, scale, and deliver value."
+              </p>
+              <span class="philosophy-author">— Saurabh Patil</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            A balanced toolkit spanning core computational logic, web presentation layers, and database management.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Domain -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-code">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Programming</h3>
+                <span class="category-subtitle">Core Logic & Foundations</span>
+              </div>
+            </div>
+            <p class="category-desc">
+              Fundamental principles of computer science, algorithmic thinking, and structural problem-solving.
+            </p>
+            <div class="skills-pill-group">
+              <span class="skill-pill">Core Programming Concepts</span>
+              <span class="skill-pill">Logic Building</span>
+              <span class="skill-pill">Data Structures</span>
+              <span class="skill-pill">Algorithmic Thinking</span>
+              <span class="skill-pill">Object-Oriented Basics</span>
+              <span class="skill-pill">Problem Solving</span>
+            </div>
+          </div>
+
+          <!-- Web Development Domain -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-web">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Web Development</h3>
+                <span class="category-subtitle">Frontend Presentation</span>
+              </div>
+            </div>
+            <p class="category-desc">
+              Building accessible, visually appealing, and responsive user experiences optimized across screen sizes.
+            </p>
+            <div class="skills-pill-group">
+              <span class="skill-pill">HTML5</span>
+              <span class="skill-pill">CSS3</span>
+              <span class="skill-pill">Responsive Web Design</span>
+              <span class="skill-pill">CSS Flexbox & Grid</span>
+              <span class="skill-pill">Semantic Markup</span>
+              <span class="skill-pill">UI/UX Principles</span>
+            </div>
+          </div>
+
+          <!-- Databases Domain -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-db">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Databases</h3>
+                <span class="category-subtitle">Data Storage & Integrity</span>
+              </div>
+            </div>
+            <p class="category-desc">
+              Designing relational database schemas, executing structured queries, and ensuring data accuracy and safety.
+            </p>
+            <div class="skills-pill-group">
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">Relational DB Management</span>
+              <span class="skill-pill">Schema Design</span>
+              <span class="skill-pill">Database Normalization</span>
+              <span class="skill-pill">CRUD Operations</span>
+              <span class="skill-pill">Data Integrity</span>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms Domain -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-tools">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Tools & Principles</h3>
+                <span class="category-subtitle">Workflow & Standards</span>
+              </div>
+            </div>
+            <p class="category-desc">
+              Leveraging modern developer tooling and structured methodologies to build reliable software reliably.
+            </p>
+            <div class="skills-pill-group">
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">SDLC Methodology</span>
+              <span class="skill-pill">Software Engineering Principles</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Code Documentation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Showcase</span>
+          <h2 class="section-title">Featured Project</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            A deep dive into functional engineering, user interface design, and relational database implementation.
+          </p>
+        </div>
+
+        <!-- Featured Project Showcase Card -->
+        <div class="featured-project-card">
+          <div class="project-header-bar">
+            <div class="project-badge-group">
+              <span class="badge-featured">⭐ Featured Project</span>
+              <span class="badge-type">FinTech & Campus Management</span>
+            </div>
+            <div class="project-status">Production Prototype</div>
+          </div>
+
+          <div class="project-main-grid">
+            <div class="project-info-col">
+              <h3 class="project-title">CampusPay</h3>
+              <p class="project-tagline">
+                A digital transaction and payment handling system tailored specifically for educational campus environments.
+              </p>
+
+              <div class="project-objective-box">
+                <strong>Key Focus:</strong>
+                <span>Streamlining digital payments, transaction tracking, and record keeping across campus canteens, libraries, and administrative services.</span>
+              </div>
+
+              <div class="project-contributions">
+                <h4 class="contributions-title">Highlights & Key Contributions:</h4>
+                <ul class="contributions-list">
+                  <li>
+                    <div class="contrib-bullet"></div>
+                    <div>
+                      <strong>Responsive & Intuitive Interface:</strong>
+                      <span>Created structured, clean UI components utilizing semantic HTML5 and modern CSS3 for frictionless user onboarding and navigation across devices.</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="contrib-bullet"></div>
+                    <div>
+                      <strong>Relational SQL Architecture:</strong>
+                      <span>Formulated well-structured SQL database schemas to organize, store, and process user account details, balance logs, and transaction histories safely.</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="contrib-bullet"></div>
+                    <div>
+                      <strong>Data Accuracy & Navigation:</strong>
+                      <span>Prioritized data integrity and straightforward workflows for campus payment scenarios, ensuring reliable balance tracking and clear audit records.</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="contrib-bullet"></div>
+                    <div>
+                      <strong>Full SDLC Discipline:</strong>
+                      <span>Designed and implemented the system following structured Software Development Lifecycle phases from requirement analysis through schema modeling.</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-label">Technology Stack:</span>
+                <div class="stack-tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">RDBMS</span>
+                  <span class="tag">SDLC</span>
+                  <span class="tag">Git</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-primary" id="openCampusPayModal">
+                  <span>Explore Architecture & Details</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </button>
+                <a href="https://github.com/patilsaurabh007" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Preview Card for CampusPay -->
+            <div class="project-visual-col">
+              <div class="mockup-window">
+                <div class="mockup-bar">
+                  <div class="mockup-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="mockup-url">campuspay.internal/dashboard</div>
+                </div>
+                <div class="mockup-body">
+                  <div class="mockup-header-sim">
+                    <div class="sim-logo">Campus<span>Pay</span></div>
+                    <div class="sim-user">Student: Saurabh Patil</div>
+                  </div>
+                  <div class="mockup-stats-sim">
+                    <div class="sim-stat-box">
+                      <span class="sim-label">Wallet Balance</span>
+                      <span class="sim-val">₹ 1,250.00</span>
+                    </div>
+                    <div class="sim-stat-box">
+                      <span class="sim-label">Last Transaction</span>
+                      <span class="sim-val-green">₹ -45.00 (Cafeteria)</span>
+                    </div>
+                  </div>
+                  <div class="mockup-table-sim">
+                    <div class="table-sim-title">Recent Ledger Entries</div>
+                    <div class="sim-row header-row">
+                      <span>Txn ID</span>
+                      <span>Category</span>
+                      <span>Amount</span>
+                      <span>Status</span>
+                    </div>
+                    <div class="sim-row">
+                      <span>#TXN-9041</span>
+                      <span>Cafeteria</span>
+                      <span>₹ 45.00</span>
+                      <span class="status-pill success">Settled</span>
+                    </div>
+                    <div class="sim-row">
+                      <span>#TXN-9040</span>
+                      <span>Library Fine</span>
+                      <span>₹ 20.00</span>
+                      <span class="status-pill success">Settled</span>
+                    </div>
+                    <div class="sim-row">
+                      <span>#TXN-9038</span>
+                      <span>Wallet Top-Up</span>
+                      <span>₹ 500.00</span>
+                      <span class="status-pill info">Credited</span>
+                    </div>
+                  </div>
+                  <div class="mockup-footer-badge">
+                    <span>⚡ Structured Relational Data Engine</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Formal engineering education establishing the fundamentals of computational systems and technology.
+          </p>
+        </div>
+
+        <div class="education-card-wrapper">
+          <div class="education-timeline-card">
+            <div class="edu-icon-col">
+              <div class="edu-institution-badge">
+                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="edu-content-col">
+              <div class="edu-header">
+                <div>
+                  <h3 class="institution-name">R. C. Patel Institute of Technology</h3>
+                  <div class="degree-title">Engineering / Technology & Computer Science Principles</div>
+                </div>
+                <div class="edu-badge-location">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Shirpur, Maharashtra, India</span>
+                </div>
+              </div>
+
+              <p class="edu-description">
+                Comprehensive study covering core computational theory, software design methodologies, database architecture, 
+                and modern software lifecycle frameworks. Built a strong foundational understanding in problem solving and engineering rigor.
+              </p>
+
+              <div class="edu-coursework">
+                <h4 class="coursework-title">Key Academic Focus Areas:</h4>
+                <div class="coursework-tags">
+                  <span class="tag-pill">Computer Science Principles</span>
+                  <span class="tag-pill">Database Management Systems</span>
+                  <span class="tag-pill">Data Structures & Logic</span>
+                  <span class="tag-pill">Software Engineering & SDLC</span>
+                  <span class="tag-pill">Web Technology Applications</span>
+                  <span class="tag-pill">Computer Networks Basics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Whether you have an opportunity, a project to collaborate on, or just want to say hi — feel free to reach out!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels Info -->
+          <div class="contact-info-panel">
+            <h3 class="contact-panel-title">Direct Contact Channels</h3>
+            <p class="contact-panel-desc">
+              I am an engineering student at R. C. Patel Institute of Technology, Shirpur actively looking for software engineering internships, entry-level roles, and technical collaborations. 
+              You can contact me directly via email, phone, or LinkedIn.
+            </p>
+
+            <div class="contact-cards-stack">
+              <!-- Email Card -->
+              <div class="contact-channel-card">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Email</span>
+                  <a href="mailto:sp1822007@gmail.com" class="channel-val">sp1822007@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="sp1822007@gmail.com" title="Copy Email">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-channel-card">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Phone</span>
+                  <a href="tel:+918766884964" class="channel-val">+91 8766884964</a>
+                </div>
+                <button class="copy-btn" data-copy="+91 8766884964" title="Copy Phone Number">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-channel-card">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Location</span>
+                  <span class="channel-val">Shirpur, Maharashtra, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Panel -->
+            <div class="social-panel-section">
+              <span class="social-panel-label">Connect Online</span>
+              <div class="social-panel-buttons">
+                <a href="https://github.com/patilsaurabh007" target="_blank" rel="noopener noreferrer" class="social-action-btn">
+                  <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>github.com/patilsaurabh007</span>
+                </a>
+                <a href="https://linkedin.com/in/saurabh-patil" target="_blank" rel="noopener noreferrer" class="social-action-btn">
+                  <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                  <span>linkedin.com/in/saurabh-patil</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Message Form -->
+          <div class="contact-form-panel">
+            <div class="form-card">
+              <h3 class="form-title">Send a Direct Message</h3>
+              <p class="form-desc">Fill out this quick form to send me an email directly.</p>
+
+              <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                  <label for="nameInput">Your Full Name</label>
+                  <input type="text" id="nameInput" name="name" placeholder="e.g. John Doe" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="emailInput">Your Email Address</label>
+                  <input type="email" id="emailInput" name="email" placeholder="e.g. john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="subjectInput">Subject</label>
+                  <input type="text" id="subjectInput" name="subject" placeholder="Opportunity / Collaboration inquiry" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="messageInput">Message</label>
+                  <textarea id="messageInput" name="message" rows="5" placeholder="Hello Saurabh, I came across your portfolio and wanted to discuss..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-full">
+                  <span>Send Message</span>
+                  <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-badge">SP</span>
+          <span class="brand-name">Saurabh Patil</span>
+          <p class="footer-bio">Engineering student at R. C. Patel Institute of Technology, Shirpur, passionate about software development, relational databases, and clean code.</p>
+        </div>
+        <div class="footer-links">
+          <span class="footer-nav-title">Navigation</span>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">CampusPay Project</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-connect">
+          <span class="footer-nav-title">Connect</span>
+          <ul>
+            <li><a href="https://github.com/patilsaurabh007" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+            <li><a href="https://linkedin.com/in/saurabh-patil" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
+            <li><a href="mailto:sp1822007@gmail.com">sp1822007@gmail.com</a></li>
+            <li><a href="tel:+918766884964">+91 8766884964</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; <span id="currentYear"></span> Saurabh Patil. Designed & Built with HTML5, CSS3, & Clean Logic.
+        </div>
+        <a href="#hero" class="back-to-top" title="Back to top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CAMPUSPAY MODAL -->
+  <div id="projectModal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <span class="modal-tag">Project Deep Dive</span>
+          <h3 class="modal-title">CampusPay Architecture & Overview</h3>
+        </div>
+        <button id="closeModalBtn" class="modal-close-btn" aria-label="Close modal">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4>📌 Executive Summary</h4>
+          <p>
+            CampusPay is a purpose-built digital transaction and payment handling system tailored for educational institutions. 
+            Traditional campus payments (canteens, libraries, stationery stores, fines) are often fragmented and rely heavily on cash or inconsistent logs. 
+            CampusPay centralizes and streamlines this into an integrated digital ledger system.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4>🗄️ Relational Database Schema Design (SQL)</h4>
+          <p>The core backbone of CampusPay relies on structured relational tables ensuring ACID compliance and ledger consistency:</p>
+          <div class="schema-code-block">
+            <pre><code>-- Core Schema Architecture
+CREATE TABLE users (
+    user_id VARCHAR(20) PRIMARY KEY,
+    full_name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    role ENUM('STUDENT', 'FACULTY', 'VENDOR', 'ADMIN'),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE accounts (
+    account_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id VARCHAR(20),
+    balance DECIMAL(10, 2) DEFAULT 0.00,
+    status ENUM('ACTIVE', 'FROZEN'),
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+
+CREATE TABLE transactions (
+    txn_id VARCHAR(36) PRIMARY KEY,
+    sender_account_id INT,
+    receiver_account_id INT,
+    amount DECIMAL(10, 2) NOT NULL,
+    category ENUM('CAFETERIA', 'LIBRARY', 'FEES', 'TOPUP'),
+    status ENUM('PENDING', 'COMPLETED', 'FAILED'),
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (sender_account_id) REFERENCES accounts(account_id),
+    FOREIGN KEY (receiver_account_id) REFERENCES accounts(account_id)
+);</code></pre>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4>🎨 User Interface & Experience (HTML5 & CSS3)</h4>
+          <ul>
+            <li><strong>Responsive Layouts:</strong> Flexbox and Grid layouts optimized for student smartphones and campus vendor terminals.</li>
+            <li><strong>Clear Ledger Visuals:</strong> Real-time visual feedback for transaction status (Success, Pending, Reversed) with color-coded badges.</li>
+            <li><strong>Intuitive Navigation:</strong> Clear flow designed specifically to reduce queue times during peak campus hours.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h4>⚙️ Engineering Highlights & SDLC Process</h4>
+          <ul>
+            <li>Followed structured SDLC from initial requirements gathering to normalization (3NF) and UI prototyping.</li>
+            <li>Employed Git version control for feature isolation and change tracking.</li>
+            <li>Designed with modular scalability in mind to support future NFC/RFID or QR payment gateways.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com/patilsaurabh007" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+          <span>Visit GitHub: patilsaurabh007</span>
+        </a>
+        <button id="closeModalBottomBtn" class="btn btn-secondary">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUME PREVIEW MODAL -->
+  <div id="resumeModal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container resume-modal-container">
+      <div class="modal-header">
+        <div>
+          <span class="modal-tag">Curriculum Vitae</span>
+          <h3 class="modal-title">Saurabh Patil — Professional Summary</h3>
+        </div>
+        <button id="closeResumeBtn" class="modal-close-btn" aria-label="Close modal">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body resume-document" id="printableResume">
+        <div class="resume-sheet">
+          <div class="resume-sheet-header">
+            <h1 class="r-name">Saurabh Patil</h1>
+            <div class="r-role">Engineering Student | Aspiring Software Engineer</div>
+            <div class="r-contact-line">
+              <span>📍 Shirpur, Maharashtra, India</span> • 
+              <span>📧 sp1822007@gmail.com</span> • 
+              <span>📱 +91 8766884964</span>
+            </div>
+            <div class="r-links-line">
+              <span>GitHub: github.com/patilsaurabh007</span> • 
+              <span>LinkedIn: linkedin.com/in/saurabh-patil</span>
+            </div>
+          </div>
+
+          <div class="r-section">
+            <h2 class="r-section-title">PROFESSIONAL SUMMARY</h2>
+            <p>
+              Driven and solution-focused Engineering Student at R. C. Patel Institute of Technology, Shirpur. Skilled in software development fundamentals, 
+              core programming concepts, relational database design, and web technology implementations using HTML, CSS, and SQL. 
+              Demonstrated hands-on experience building practical software solutions like CampusPay. 
+              Passionate about solving complex technical challenges and building efficient, user-centered applications.
+            </p>
+          </div>
+
+          <div class="r-section">
+            <h2 class="r-section-title">TECHNICAL SKILLS</h2>
+            <div class="r-skills-table">
+              <div class="r-skill-row">
+                <strong>Programming:</strong>
+                <span>Core Programming Concepts, Logic & Data Structures, Algorithmic Thinking</span>
+              </div>
+              <div class="r-skill-row">
+                <strong>Web Development:</strong>
+                <span>HTML5, CSS3, Responsive Design, Flexbox & Grid Systems</span>
+              </div>
+              <div class="r-skill-row">
+                <strong>Databases:</strong>
+                <span>SQL, Relational Database Management (RDBMS), Normalization, Data Integrity</span>
+              </div>
+              <div class="r-skill-row">
+                <strong>Tools & Platforms:</strong>
+                <span>Git, GitHub, Software Engineering Principles, SDLC, VS Code</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="r-section">
+            <h2 class="r-section-title">FEATURED PROJECT</h2>
+            <div class="r-project-item">
+              <div class="r-project-header">
+                <span class="r-proj-title">CampusPay — Digital Campus Transaction System</span>
+                <span class="r-proj-tech">HTML, CSS, SQL, SDLC</span>
+              </div>
+              <p class="r-proj-desc">A digital transaction and payment handling system tailored for campus environments to streamline payments and record keeping.</p>
+              <ul class="r-bullets">
+                <li>Created structured, responsive user interface components using HTML and CSS for smooth student and vendor interactions.</li>
+                <li>Formulated SQL database structures to organize, store, and process transaction histories and user account records safely.</li>
+                <li>Focused on smooth user navigation, data accuracy, and auditability for campus payment scenarios.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="r-section">
+            <h2 class="r-section-title">EDUCATION</h2>
+            <div class="r-edu-item">
+              <div class="r-edu-header">
+                <span class="r-edu-name">R. C. Patel Institute of Technology</span>
+                <span class="r-edu-loc">Shirpur, Maharashtra, India</span>
+              </div>
+              <div class="r-edu-degree">Engineering / Technology & Computer Science Principles (Currently Pursuing)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="printResumeBtn" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>Print / Save as PDF</span>
+        </button>
+        <button id="closeResumeBottomBtn" class="btn btn-secondary">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast" class="toast" aria-live="polite">
+    <div class="toast-content">
+      <svg class="toast-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+      <span id="toastMessage">Copied to clipboard!</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
